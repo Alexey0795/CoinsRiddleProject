@@ -6,13 +6,13 @@ Function CreateCoinKit()
 
     Dim result As New Scripting.Dictionary
     
-    Dim arr_temp_пустая_сущность_монетки(1 To 6) As String
-    arr_temp_пустая_сущность_монетки(3) = vbYellow
+    Dim arr_temp_РїСѓСЃС‚Р°СЏ_СЃСѓС‰РЅРѕСЃС‚СЊ_РјРѕРЅРµС‚РєРё(1 To 6) As String
+    arr_temp_РїСѓСЃС‚Р°СЏ_СЃСѓС‰РЅРѕСЃС‚СЊ_РјРѕРЅРµС‚РєРё(3) = vbYellow
     
     Dim i As Integer
     For i = Asc("A") To Asc("A") + 11
-        arr_temp_пустая_сущность_монетки(6) = Chr(i)
-        result.Add Chr(i), arr_temp_пустая_сущность_монетки
+        arr_temp_РїСѓСЃС‚Р°СЏ_СЃСѓС‰РЅРѕСЃС‚СЊ_РјРѕРЅРµС‚РєРё(6) = Chr(i)
+        result.Add Chr(i), arr_temp_РїСѓСЃС‚Р°СЏ_СЃСѓС‰РЅРѕСЃС‚СЊ_РјРѕРЅРµС‚РєРё
     Next i
     
     Set CreateCoinKit = result

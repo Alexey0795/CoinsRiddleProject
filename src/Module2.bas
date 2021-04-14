@@ -1,33 +1,33 @@
 Attribute VB_Name = "Module2"
 Sub test()
     Set Rng = Selection
-    Rng.Copy Destination:=Worksheets("Лист3").Range("b3", "c4")
+    Rng.Copy Destination:=Worksheets("Р›РёСЃС‚3").Range("b3", "c4")
     Application.ScreenUpdating = False
-    Worksheets("Лист3").Activate
+    Worksheets("Р›РёСЃС‚3").Activate
     Range("a4").Select
-    Worksheets("Лист3").Paste
-    Worksheets("Лист3").Select
+    Worksheets("Р›РёСЃС‚3").Paste
+    Worksheets("Р›РёСЃС‚3").Select
 '    Debug.Print Rng.Cells(2, 1).Address
 End Sub
 
 
-Sub меят_цвет_потрачено_()
+Sub РјРµСЏС‚_С†РІРµС‚_РїРѕС‚СЂР°С‡РµРЅРѕ_()
 Stop
     Set Rng = Selection
-    черный = Range("a1").Interior.Color
-    красный = Range("b2").Interior.Color
+    С‡РµСЂРЅС‹Р№ = Range("a1").Interior.Color
+    РєСЂР°СЃРЅС‹Р№ = Range("b2").Interior.Color
     For Each cell In Rng
-        If cell.Interior.Color = черный Then
-            cell.Interior.Color = красный
+        If cell.Interior.Color = С‡РµСЂРЅС‹Р№ Then
+            cell.Interior.Color = РєСЂР°СЃРЅС‹Р№
         Else
-            cell.Interior.Color = черный
+            cell.Interior.Color = С‡РµСЂРЅС‹Р№
         End If
     Next cell
 End Sub
-Sub Макрос1()
-Attribute Макрос1.VB_ProcData.VB_Invoke_Func = " \n14"
+Sub РњР°РєСЂРѕСЃ1()
+Attribute РњР°РєСЂРѕСЃ1.VB_ProcData.VB_Invoke_Func = " \n14"
 '
-' Макрос1 Макрос
+' РњР°РєСЂРѕСЃ1 РњР°РєСЂРѕСЃ
 '
 
 '
